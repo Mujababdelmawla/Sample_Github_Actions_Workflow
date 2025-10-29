@@ -1,17 +1,14 @@
-name: "Hello World Workflow"
+name: Hello World Workflow
 
-on: 
-    push:
-        branches:
-            -master
-            -production
-
+on:
+  push:
+    branches:
+      - master
+      - production
 
 jobs:
-    hello_world:
-        runs-on: ubuntu-latest
-        steps:
-            -name: "print jello world"
-             run: echo "hello world"
-
-             
+  hello_world:
+    runs-on: ubuntu-latest
+    steps:
+      - name: print hello world
+        run: echo "hello world"
